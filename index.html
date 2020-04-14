@@ -4,14 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="index.css" />
-    <script src="index.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+      integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE="
+      crossorigin="anonymous"
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
       rel="stylesheet"
     />
     <link
@@ -35,18 +41,158 @@
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js" type="text/javascript"></script>
 
     <title>Document</title>
   </head>
   <body>
-    <nav class="bg-dark navbar-dark">
-      <div class="container row d-flex justify-content-center">
-        <div class="nav1 column m-3">1</div>
-        <div class="nav2 column m-3">2</div>
-        <div class="nav3 column m-3">3</div>
+    <div class="headerThing d-flex col-sm-10 justify-content-end pr-5">
+      <h3 class="headLine mt-2">• OPEN |</h3>
+      <h4 class="headLine mt-2 align-self-center">until 6pm today!</h4>
+    </div>
+    <nav class="col-12 justify-content-center column navBar pb-2">
+      <div
+        class="container col-8 d-flex justify-content-between align-self-end topRow"
+      >
+        <div class="nav1 pl-5 column col-sm-3 align-self-end">
+          <img class="burgerImage mb-2" src="./img/burgerlove-logo.png" />
+
+          <div class="row justify-content-between ml-1">
+            <p class="greyText">Utkörning:</p>
+            <p class="font-weight-bolder">09:00-20:00</p>
+          </div>
+          <div class="row justify-content-between ml-1">
+            <p class="greyText">Avhämtning:</p>
+            <p class="font-weight-bolder">09:00-20:00</p>
+          </div>
+        </div>
+        <div class="nav2 row col-sm-2 mb-1 align-self-end">
+          <i
+            class="fas fa-utensils mb-4 mr-1"
+            style="font-size: 35px; color: white;"
+          ></i>
+          <div class="column">
+            <p class="otherFont greyText">restaurang</p>
+            <p class="otherFont">Online.se</p>
+          </div>
+          <p class="greyText">
+            Vi är online och tar emot beställningar!
+          </p>
+        </div>
+        <div class="nav3 col-sm-4 mb-1 column align-self-end">
+          <div class="col input-group mb-4">
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>0</option>
+              <option>SLÄPP UT MIG</option>
+            </select>
+            <button class="btn redButton">
+              <div class="borderButton"></div>
+            </button>
+          </div>
+
+          <div class="row ml-3">
+            <p class="">
+              <a href="#">LOGGA IN</a>
+            </p>
+            <p class="ml-3"><a href="#">REGISTRERA</a></p>
+          </div>
+        </div>
       </div>
     </nav>
-    <div class="container"><p>this is container</p></div>
-    <div class="footer">this is a footer</div>
+
+    <div class="midSection d-flex justify-content-center col-12">
+      <div class="col-10 container d-flex justify-content-center">
+        <div id="menu" class="col-9 menu justify-content-center">
+          <h1 onclick="dropDown()" class="menuHeader">Burgers</h1>
+          <div class="menu-icon">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+          <div
+            id="dropdown"
+            class="col-11 column dropdownToggle menuItems justify-content-center"
+          >
+            <div class="row p-5 ml-3 menuItem justify-content-around">
+              <div class="ring col-sm-1"></div>
+              <div class="item col-sm-4">
+                <p class="title">Halloumi</p>
+                <p class="description">
+                  Grillad halloumi, pestomajonnäs, romansallad, picklad rödlök &
+                  avkodado
+                </p>
+              </div>
+              <div class="price col-sm-2">
+                <p>98:-</p>
+              </div>
+            </div>
+            <div class="row p-5 ml-3 menuItem justify-content-around">
+              <div class="ring col-sm-1"></div>
+              <div class="item col-sm-4">
+                <p class="title">California</p>
+                <p class="description">
+                  Grillat nötkött, ananas-slaw, guacamole, picklad rödlök &
+                  mango
+                </p>
+              </div>
+              <div class="price col-sm-2">
+                <p>118:-</p>
+              </div>
+            </div>
+            <div class="row p-5 ml-3 menuItem justify-content-around">
+              <div class="ring col-sm-1"></div>
+              <div class="item col-sm-4">
+                <p class="title">Lofoten</p>
+                <p class="description">
+                  Stekt panerad rödspätta, 1-2-3 gurka, bladspenat, picklad
+                  rädisa & dijonnaise.
+                </p>
+              </div>
+              <div class="price col-sm-2">
+                <p>88:-</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer col-12 d-flex row justify-content-center mt-4 mb-4">
+      <div class="footerContent headLine col-10 justify-content-center row">
+        <div class="col-8 justify-content-between row">
+          <div class="row justify-content-around">
+            <div class="column pr-5">
+              <h4>Visit us</h4>
+              <p class="redText">Stortorget 6 702 11 Örebro</p>
+              <p class="redText">burgerloveorebro@hotmail.com</p>
+              <p class="redText">019 760 56 60</p>
+            </div>
+            <div class="column">
+              <h4>Hours</h4>
+              <div class="row justify-content-between">
+                <p class="redText">Måndag-Torsdag:</p>
+                <p class="redText">09:00-21:00</p>
+              </div>
+              <div class="row justify-content-between">
+                <p class="redText">Fredag-Lördag:</p>
+                <p class="redText">09:00-22:00</p>
+              </div>
+              <div class="row justify-content-between">
+                <p class="redText">Söndag:</p>
+                <p class="redText">12:00-18:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-between">
+            <div class="footerFA mr-2 align-middle justify-content-center">
+              <i class="faRed fab m-2 fa-facebook-f"></i>
+            </div>
+            <div class="footerFA ml-2 align-middle justify-content-center">
+              <i class="faRed fab m-2 fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

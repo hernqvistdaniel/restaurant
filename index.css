@@ -1,11 +1,139 @@
 p,
-span {
-  font-family: 'Bebas Neue', cursive;
+span,
+.description {
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0 !important;
+}
+
+a {
+  color: inherit !important;
 }
 
 h1,
 h2,
 h3,
-h4 {
+h4,
+.headLine,
+.title,
+.price {
   font-family: 'Bebas Neue', cursive;
+}
+
+.headLine {
+  color: #72161d;
+}
+
+nav > * {
+  font-size: 12px;
+  height: 150px;
+}
+
+.navBar {
+  background-color: #262829;
+}
+
+.burgerImage {
+  width: 120px;
+  height: 130px;
+}
+
+.greyText {
+  color: grey;
+}
+
+.footerFA {
+  background-color: #72161d;
+  height: 50px;
+  width: 50px;
+  outline: 1px solid white;
+  outline-offset: -5px;
+}
+
+.faRed {
+  color: white;
+  font-size: 35px;
+}
+
+.redText {
+  color: #72161d;
+  font-size: 12px;
+}
+
+.redButton {
+  background-color: #72161d !important;
+  width: 50px;
+  height: 40px;
+  outline: 1px solid white;
+  outline-offset: -5px;
+}
+
+.ring {
+  background-color: #262829;
+  height: 45px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.line {
+  background-color: white;
+  height: 2px;
+  display: block;
+}
+.line + .line {
+  margin-top: 8px;
+}
+
+.menu {
+  background-color: #72161d;
+  text-align: center;
+  height: 250px;
+  margin-top: 100px;
+  outline: 1px solid white;
+  outline-offset: -15px;
+}
+
+.dropdownToggle {
+  transition-property: visibility;
+  transition-delay: 0s;
+  transition-timing-function: linear;
+  visibility: hidden;
+}
+
+.menuItems {
+  flex-wrap: no-wrap;
+}
+
+.item {
+  text-align: left;
+}
+
+.menuHeader {
+  margin-top: 70px;
+  font-size: 100px;
+  color: white;
+}
+
+.midSection {
+  background: url('img/burgerlove-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 1000px;
+}
+
+.otherFont {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title {
+  font-size: 28px;
+}
+.description {
+  font-size: 12px;
 }
